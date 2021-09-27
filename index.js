@@ -246,8 +246,14 @@ let playerScore = 0
 let wrongAttempt = 0 
 let indexNumber = 0
 
+let wrongAnswers = [] // empty array that wrong answers will be added to.
+let wrongQuestions = [] // empty array that wrong questions will be added to. This is used for display at the end
+
 // function for displaying next question in the array to dom
 function NextQuestion(index) {
+	
+	document.getElementById('score-modal').style.display = "none"
+	
     handleQuestions()
     const currentQuestion = shuffledQuestions[index]
     document.getElementById("question-number").innerHTML = questionNumber
@@ -297,6 +303,20 @@ function checkForAnswer() {
             document.getElementById(correctOption).style.backgroundColor = "rgba(51, 222, 51, 0.5)"
             wrongAttempt++
             indexNumber++
+			
+
+			wrongQuestions.push(currentQuestion.question)
+			
+			if (currentQuestion.correctOption === "optionA")
+				wrongAnswers.push(currentQuestion.optionA)
+			else if (currentQuestion.correctOption === "optionB")
+				wrongAnswers.push(currentQuestion.optionB)
+			else if (currentQuestion.correctOption === "optionC")
+				wrongAnswers.push(currentQuestion.optionC)
+			else if (currentQuestion.correctOption === "optionD")
+				wrongAnswers.push(currentQuestion.optionD)
+			
+			
             //set to delay question number till when next question loads
             setTimeout(() => {
                 questionNumber++
@@ -379,16 +399,16 @@ function handleEndGame() {
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "Bad Grades, Keep Practicing."
-        remarkColor = "red"
+        remark = "<B>Bad Grades, Keep Practicing.</B>"
+        remarkColor = "#e98080"
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Average Grades, You can do better."
-        remarkColor = "orange"
+        remark = "<B>Average Grades, You can do better.</B>"
+        remarkColor = "#f2b681"
     }
     else if (playerScore >= 7) {
-        remark = "Excellent, Keep the good work going."
-        remarkColor = "green"
+        remark = "<B>Excellent, Keep the good work going.</B>"
+        remarkColor = "#81f281"
     }
     const playerGrade = (playerScore / 10) * 100
 
@@ -398,7 +418,18 @@ function handleEndGame() {
     document.getElementById('grade-percentage').innerHTML = playerGrade
     document.getElementById('wrong-answers').innerHTML = wrongAttempt
     document.getElementById('right-answers').innerHTML = playerScore
-    document.getElementById('score-modal').style.display = "flex"
+    document.getElementById('score-modal').style.display = "block"
+	document.getElementById('mainQuiz').style.display = "none"
+	
+	document.getElementById('wrongQuestion').innerHTML = ""
+	
+	for (let i = 0; i < wrongQuestions.length; i++) {
+		document.getElementById('wrongQuestion').innerHTML += wrongQuestions[i] + "<br />"
+		document.getElementById('wrongQuestion').innerHTML += "<b>" + wrongAnswers[i] + "</b><br /><br />"
+	}
+	
+	
+	wrongQuestions[0]
 
 }
 
@@ -411,6 +442,11 @@ function closeScoreModal() {
     shuffledQuestions = []
     NextQuestion(indexNumber)
     document.getElementById('score-modal').style.display = "none"
+	document.getElementById('mainQuiz').style.display = "block"
+	wrongQuestions = []
+	wrongAnswers = []
+	
+	console.log(wrongAnswers.length)
 }
 
 //function to close warning modal

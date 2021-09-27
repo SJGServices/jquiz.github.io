@@ -7,53 +7,93 @@
 	</head>
   
 	<body class="text-center" onload="NextQuestion(0)">
+	
+	
+	
+	
 	<div class="row">
 		<div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
 			<header class="d-flex justify-content-center">
 				<p class="h1 mt-auto mb-auto">Janie's Quiz</p>
 			</header>
+			
+			
+
 			<main class="rounded-3">
-				<div class="row container-fluid g-0">
-					<div class="col-10 offset-1">
+			
+			
+			
+			
+			
+				<div class="modal-container" id="score-modal">
+					<div class="modal-content-container">
+					<h1><br />Congratulations, Quiz Completed.</h1>
+						<div class="grade-details">
+						<p>Attempts : 10</p>
+						<p>Wrong Answers : <span id="wrong-answers"></span></p>
+						<p>Right Answers : <span id="right-answers"></span></p>
+						<p>Grade : <span id="grade-percentage"></span>%</p>
+						<p ><span class="h4" id="remarks"></span></p>
+						</div>
+						<div class="modal-button-container d-grid gap-2 mt-4">
+							<button id="contButton" type="button" class="btn btn-outline-light btn-block" onclick="closeScoreModal()"><b><h3>Continue</b></h3></button>
+						</div>
+						
+						<div class="grade-qa"><br />
+						<p class="h3">Below you will find the questions you missed with the correct answers.</p><br />
+						<p ><span id="wrongQuestion"></span></p>
 
-
-					<div class="game-question-container pt-4 pb-2">
-					<h2 id="display-question"></h2>
+						</div>
 					</div>
-
-					<!-- this is trashed -->
-					<div class="game-options-container"><div class="modal-container" id="option-modal"><div class="modal-content-container"></div></div></div>
 				</div>
-				<div class="row container-fluid g-0 mt-2">
-					
-					
-					
-					
-					<div class="col-10 offset-1 col-md-4 offset-md-1 d-grid pt-2">
-						<input type="radio" id="option-one" name="option" class="radio d-none" value="optionA"/>
-						<label for="option-one" class="option border border-1 rounded-2 pt-1 disable-select" id="option-one-label" onmouseup="changeLabelBG1()"></label>
+
+			
+			
+			
+				<div id="mainQuiz" class="container-fluid g-0">
+					<div class="row container-fluid g-0">
+						<div class="col-10 offset-1">
+
+
+						<div class="game-question-container pt-4 pb-2">
+						<h2 id="display-question"></h2>
+						</div>
+
+						<!-- this is trashed -->
+						<div class="game-options-container"><div class="modal-container" id="option-modal"><div class="modal-content-container"></div></div></div>
 					</div>
-					
-					<div class="col-10 offset-1 col-md-4 offset-md-2 d-grid pt-2">
-						<input type="radio" id="option-two" name="option" class="radio d-none" value="optionB"/>
-						<label for="option-two" class="option border border-1 rounded-2 pt-1 disable-select" id="option-two-label" onmouseup="changeLabelBG2()"></label>
-					</div>
-					
-					<div class="col-10 offset-1 col-md-4 offset-md-1 d-grid pt-2">
-						<input type="radio" id="option-three" name="option" class="radio d-none" value="optionC"/>
-						<label for="option-three" class="option border border-1 rounded-2 pt-1 disable-select" id="option-three-label" onmouseup="changeLabelBG3()"></label>
-					</div>
-					
-					<div class="col-10 offset-1 col-md-4 offset-md-2 d-grid pt-2">
-						<input type="radio" id="option-four" name="option" class="radio d-none" value="optionD"/>
-						<label for="option-four" class="option border border-1 rounded-2 pt-1 disable-select" id="option-four-label" onmouseup="changeLabelBG4()"></label>
-					</div>
-					
-					<div class="next-button-container d-grid gap-2 mt-4">
-						<button type="button" class="btn btn-outline-light btn-block" onclick="handleNextQuestion()"><b><h3>Next Question</h3></b></button>
+					<div class="row container-fluid g-0 mt-2">
+						
+						
+						
+						
+						<div class="col-10 offset-1 col-md-4 offset-md-1 d-grid pt-2">
+							<input type="radio" id="option-one" name="option" class="radio d-none" value="optionA"/>
+							<label for="option-one" class="option border border-1 rounded-2 pt-1 disable-select" id="option-one-label" onmouseup="changeLabelBG1()"></label>
+						</div>
+						
+						<div class="col-10 offset-1 col-md-4 offset-md-2 d-grid pt-2">
+							<input type="radio" id="option-two" name="option" class="radio d-none" value="optionB"/>
+							<label for="option-two" class="option border border-1 rounded-2 pt-1 disable-select" id="option-two-label" onmouseup="changeLabelBG2()"></label>
+						</div>
+						
+						<div class="col-10 offset-1 col-md-4 offset-md-1 d-grid pt-2">
+							<input type="radio" id="option-three" name="option" class="radio d-none" value="optionC"/>
+							<label for="option-three" class="option border border-1 rounded-2 pt-1 disable-select" id="option-three-label" onmouseup="changeLabelBG3()"></label>
+						</div>
+						
+						<div class="col-10 offset-1 col-md-4 offset-md-2 d-grid pt-2">
+							<input type="radio" id="option-four" name="option" class="radio d-none" value="optionD"/>
+							<label for="option-four" class="option border border-1 rounded-2 pt-1 disable-select" id="option-four-label" onmouseup="changeLabelBG4()"></label>
+						</div>
+						
+						<div class="next-button-container d-grid gap-2 mt-4">
+							<button type="button" class="btn btn-outline-light btn-block" onclick="handleNextQuestion()"><b><h3>Next Question</h3></b></button>
+						</div>
 					</div>
 				</div>
 			</main>
+			
 			<footer class="d-flex justify-content-center">
 				<div class="game-details-container mt-auto">
 					<p class="h6"> Question (<span id="question-number">4</span>/10) &ensp;&ensp; Score (<span id="player-score">1</span>/10)</p>

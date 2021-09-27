@@ -19,13 +19,18 @@ main label{
 }
 
 
+#contButton{
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
 .next-button-container button{
 	background-color: rgba(255, 255, 255, 0.3);
 	height: 60px;
 }
 
 footer{
-	height: 55px;
+	height: 77px;
 	color: #565656;
 }
 
