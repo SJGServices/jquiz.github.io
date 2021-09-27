@@ -1,0 +1,39 @@
+body{
+	background: linear-gradient(33deg, #d9e5fc, #caedea);
+	color: white;
+	
+}
+
+header{
+	height: 100px;
+	text-shadow: 3px 4px #afd8eb;
+}
+
+main{
+	background: linear-gradient(111deg, #99cccc, #9999cc);
+}
+
+main label{
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.next-button-container button{
+	background-color: rgba(255, 255, 255, 0.3);
+	height: 60px;
+}
+
+footer{
+	height: 55px;
+	color: #565656;
+}
+
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
