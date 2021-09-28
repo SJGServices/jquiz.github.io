@@ -14,7 +14,9 @@ main{
 }
 
 main label{
-	height: 40px;
+	padding-bottom: 8px;
+	padding-right: 4px;
+	padding-left: 4px;
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
