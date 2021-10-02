@@ -8,11 +8,11 @@ const questions = [
         correctOption: "optionA"
     },
     {
-        question: "Document that gives evidence of ownership of a property. Also indicates the rights of ownership and possession of the property. Individuals who will have legal ownership in the property are considered -on title- and will sign the mortgage and other documentation",
-        optionA: "Title",
-        optionB: "Inscription",
-        optionC: "Affidavit",
-        optionD: "Will",
+        question: "Document that gives evidence of ownership of a property. Also indicates the rights of ownership and possession of the property. Individuals who will have legal ownership in the property are considered ---------- and will sign the mortgage and other documentation",
+        optionA: "On Title",
+        optionB: "In Inscription",
+        optionC: "On Affidavit",
+        optionD: "At Will",
         correctOption: "optionA"
     },
     {
@@ -28,14 +28,14 @@ const questions = [
         optionA: "Escrow Seller",
         optionB: "Escrow agent",
         optionC: "Escrow Company",
-        optionD: "Escrow Coraline",
+        optionD: "Escrow Buyer",
         correctOption: "optionC"
     },
     {
         question: "A person with fiduciary responsibility to the buyer and seller, or the borrower and lender, to ensure that the terms of the purchase/sale or loan are carried out.",
         optionA: "Escrow Company",
         optionB: "Escrow Seller",
-        optionC: "Coraline",
+        optionC: "Escrow Buyer",
         optionD: "Escrow Agent",
         correctOption: "optionD"
     },
@@ -57,8 +57,8 @@ const questions = [
     },
     {
         question: "The -------- is the bank that is lending the money. The -------- has the biggest role in the process, because without them lending the money, there would be no need for a title or escrow company. This is the reason why the majority of the documents in your loan signings are -------- documents.",
-        optionA: "Recipient",
-        optionB: "Borrower (Mortgagor)",
+        optionA: "Mortgagor",
+        optionB: "Borrower",
         optionC: "Lender",
         optionD: "Insurer",
         correctOption: "optionC"
@@ -73,7 +73,7 @@ const questions = [
     },
     {
         question: "Amendments to the deed of trust that are recorded with the deed. Something the lender wants to add to the deed.",
-        optionA: "Rider (to deed of trust)",
+        optionA: "Rider",
         optionB: "powers of attorney",
         optionC: "Contracter",
         optionD: "Witness",
@@ -112,7 +112,7 @@ const questions = [
         correctOption: "optionA"
     },
     {
-        question: "A line of credit that is tied to the equity of the borrower's residence. Ex, the home is worth $500,000 and there is a first loan for $200,000, that means there is $300,000 of equity. In this example, a bank may approve the borrower for a line of credit for $100,000. The line of credit works like credit card. The borrower makes payments on the amount they have borrowed on the HELOC line of credit.",
+        question: "A line of credit that is tied to the equity of the borrower's residence. Ex, the home is worth $500,000 and there is a first loan for $200,000, that means there is $300,000 of equity. In this example, a bank may approve the borrower for a line of credit for $100,000. The line of credit works like credit card. The borrower makes payments on the amount they have borrowed on the --------------.",
         optionA: "Adjustable Mortgage Line of Credit (AMLOC)",
         optionB: "Bank Line of Credit (BLOC)",
         optionC: "Home Equity Line of Credit (HELOC)",
@@ -120,7 +120,7 @@ const questions = [
         correctOption: "optionC"
     },
     {
-        question: "Enables older homeowners (62+) to convert part of the equity in their homes into tax-free income without having to sell the home, give up title, or take on a new monthly mortgage payment. The ---------- is aptly named because the payment stream is -reversed.- Instead of making monthly payments to a lender, as with a regular mortgage, a lender makes payments to the owner, based off the equity in the residence.",
+        question: "Enables older homeowners (62+) to convert part of the equity in their homes into tax-free income without having to sell the home, give up title, or take on a new monthly mortgage payment. Instead of making monthly payments to a lender, as with a regular mortgage, a lender makes payments to the owner, based off the equity in the residence.",
         optionA: "Adjustable-rate Mortgage",
         optionB: "Forward Mortgage",
         optionC: "Fixed-rate Mortgage",
@@ -140,139 +140,133 @@ const questions = [
         optionA: "Forestall",
         optionB: "Close out",
         optionC: "Foreclosure",
-        optionD: "Foresee",
+        optionD: "zzzzzzzzz",
         correctOption: "optionC"
-    }
-
-	
-		
-/*
-		
-		
+    },	
     {
         question: "Taxes that are due to the county where the property resides. Usually due twice a year.",
         optionA: "Property tax",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionB: "Mortgage tax",
+        optionC: "State tax",
+        optionD: "Real estate tax",
         correctOption: "optionA"
     },
     {
-        question: "An account established to collect property tax and hazard/fire insurance on the property. Sometimes required by the lender as a term of the loan. The impound account and escrow account are the same thing. As the taxes and insurance come due, the lender will make the payments for the borrower. Not all borrowers are required to have an impound account, but they may prefer it.",
-        optionA: "zzzzzzzzz",
-        optionB: "Impound Account/Escrow Account",
+        question: "<b>True or False: </b>The impound account and escrow account are an account established to collect property tax and hazard/fire insurance on the property. Sometimes required by the lender as a term of the loan. The impound account and escrow account are the same thing. As the taxes and insurance come due, the lender will make the payments for the borrower. Not all borrowers are required to have an impound account, but they may prefer it.",
+        optionA: "False",
+        optionB: "True",
         optionC: "zzzzzzzzz",
         optionD: "zzzzzzzzz",
         correctOption: "optionB"
     },
     {
         question: "Repayment of a loan with periodic payments of both principal and interest calculated to pay off the loan at the end of a fixed period of time.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        optionA: "Settlement",
+        optionB: "Restitution",
         optionC: "Amortization",
-        optionD: "zzzzzzzzz",
+        optionD: "Subsidy",
         correctOption: "optionC"
     },
     {
         question: "Document that replaces what used to be called the truth in lending form. Informs the borrower about everything pertinent about the loan; all costs associated with the transaction, just like the closing statement. The lender must disclose everything about the loan so the borrower has a concise look at what they are getting in to. This form is a little redundant as it has information found on different forms throughout the loan documents.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "Closing Disclosure/CD",
+        optionA: "Opening Exposure",
+        optionB: "Closing Divulgence",
+        optionC: "Closing Acknowledgment",
+        optionD: "Closing Disclosure",
         correctOption: "optionD"
     },
     {
         question: "Protects the insured against loss due to fire or other natural disaster in exchange for a premium paid to the insurer.",
         optionA: "Hazard Insurance",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionB: "Life Insurance",
+        optionC: "Fire Insurance",
+        optionD: "Accidental Insurance",
         correctOption: "optionA"
     },
     {
-        question: "Abbreviation for Principal, Interest, Taxes and Insurance; the components of a monthly mortgage payment.",
-        optionA: "zzzzzzzzz",
-        optionB: "PITI",
+        question: "<b>True or False: </b>PITI stands for -Abbreviation for Principal, Interest, Taxes and Insurance- the components of a monthly mortgage payment.",
+        optionA: "False",
+        optionB: "True",
         optionC: "zzzzzzzzz",
         optionD: "zzzzzzzzz",
         correctOption: "optionB"
     },
     {
-        question: "Fixed- or adjustable-rate loans insured by the U.S. Department of Housing and Urban Development. FHA loans are designed to make housing more affordable, particularly for first-time home buyers. FHA loans typically permit borrowers to buy a home with a lower down payment than conventional loans. With FHA insurance, eligible buyers can purchase a home with a down payment of as little as 3% of the appraised value or the purchase price, whichever is lower.",
+        question: "<b>True or False: </b> BHS loans are designed to make housing more affordable, particularly for first-time home buyers. BHS loans typically permit borrowers to buy a home with a lower down payment than conventional loans. With BHS insurance, eligible buyers can purchase a home with a down payment of as little as 3% of the appraised value or the purchase price, whichever is lower.",
         optionA: "zzzzzzzzz",
         optionB: "zzzzzzzzz",
-        optionC: "FHA Loans",
-        optionD: "zzzzzzzzz",
+        optionC: "False",
+        optionD: "True",
         correctOption: "optionC"
     },
     {
-        question: "Fixed-rate loans guaranteed by the U.S. Department of Veterans Affairs. They are designed to make housing affordable for eligible U.S. veterans. VA loans are available to veterans, reservists, active-duty personnel, and surviving spouses of veterans with 100% entitlement. Eligible veterans may be able to purchase a home with no down payment, no cash reserve, no application fee, and lower closing costs than other financing options.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
+        question: "Fixed-rate loans guaranteed by the U.S. Department of Veterans Affairs. They are designed to make housing affordable for eligible U.S. veterans. ----------- are available to veterans, reservists, active-duty personnel, and surviving spouses of veterans with 100% entitlement. Eligible veterans may be able to purchase a home with no down payment, no cash reserve, no application fee, and lower closing costs than other financing options.",
+        optionA: "VAN Loans",
+        optionB: "BS Loans",
+        optionC: "WA Loans",
         optionD: "VA Loans",
         correctOption: "optionD"
     },
     {
         question: "The borrower signs this form to give permission to lender to request and receive a copy of the borrower's taxes that are filed with the IRS.",
         optionA: "4506",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionB: "4365",
+        optionC: "4403",
+        optionD: "3542",
         correctOption: "optionA"
     },
     {
         question: "Document that describes escrow's role and responsibility during the transaction to the borrower.",
-        optionA: "zzzzzzzzz",
+        optionA: "Escrow Directions",
         optionB: "Escrow Instructions",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionC: "Escrow Insurance",
+        optionD: "Escrow Amendment",
         correctOption: "optionB"
     },
     {
         question: "Describes any changes made to the original escrow instructions.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        optionA: "Escrow Remedy",
+        optionB: "Escrow Instructions",
         optionC: "Escrow Amendment",
-        optionD: "zzzzzzzzz",
+        optionD: "Escrow Amelioration",
         correctOption: "optionC"
     },
     {
-        question: "Escrow Amendment Describes any changes made to the original escrow instructions. Closing Statement Document that brings together all of escrow, title and the lender's fees for the borrower to see and approve. Escrow creates the closing statement.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
+        question: "Escrow Amendment Describes any changes made to the original escrow instructions. ------------- Document that brings together all of escrow, title and the lender's fees for the borrower to see and approve. Escrow creates the ----------.",
+        optionA: "Closing Amendment",
+        optionB: "Closing Clause",
+        optionC: "Opening Enrollment",
         optionD: "Closing Statement",
         correctOption: "optionD"
     },
     {
         question: "Document where the borrower lets escrow know what insurance company they use. Incudes insurance company name, policy # and the insurance agent's name and phone number.",
         optionA: "Insurance Information Sheet",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionB: "Borrower Information Sheet",
+        optionC: "Insurance Open Policy",
+        optionD: "Disbursement of Proceeds",
         correctOption: "optionA"
     },
     {
         question: "Document that informs escrow how the borrower wants to receive funds that may be due after closing.",
-        optionA: "zzzzzzzzz",
+        optionA: "Insurance Information Sheet",
         optionB: "Disbursement of Proceeds",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionC: "Insurance Closing Policy",
+        optionD: "Insurance Disclosure Sheet",
         correctOption: "optionB"
     },
     {
         question: "Document that gives escrow all the information they need to open escrow. The current payoff, whom they owe and how much, any private liens, HOA info and/or insurance information.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        optionA: "Insurance Information Sheet",
+        optionB: "Borrower Disclosure Sheet",
         optionC: "Borrower Information Sheet",
-        optionD: "zzzzzzzzz",
+        optionD: "Payoff Demand/Payoff Statement",
         correctOption: "optionC"
     },
     {
         question: "Document that shows what the borrower owes their current lender. Escrow is responsible for ordering the demand statement from the current lender. They then present it to the borrower for approval to pay off the amount stated.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        optionA: "Insurance Information Sheet",
+        optionB: "Borrower Information Sheet",
         optionC: "zzzzzzzzz",
         optionD: "Payoff Demand/Payoff Statement",
         correctOption: "optionD"
@@ -280,173 +274,172 @@ const questions = [
     {
         question: "An application for title insurance.",
         optionA: "Statement of Information (S.I.)",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
+        optionB: "Statement of Insurance (S.I.)",
+        optionC: "Statement of Income (S.I.)",
         optionD: "zzzzzzzzz",
         correctOption: "optionA"
     },
     {
         question: "Document that changes the way property title is held. Could be from a seller to a buyer, or an owner changing the way they currently hold title. For instance, an owner got married and is adding their spouse to the property or an owner is putting their house in a trust.",
-        optionA: "zzzzzzzzz",
+        optionA: "Insurance Disclosure Sheet",
         optionB: "Grant ​Deed/Quitclaim Deed",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionC: "Payoff Demand/Payoff Statement",
+        optionD: "Disbursement of Proceeds",
         correctOption: "optionB"
     },
     {
-        question: "Document that proves that a borrower has an established valid trust, in lieu of actually providing the whole entire trust (which at times could exceed 100 pages). If the property is held in a trust in any matter, a trust certification has to be filled out.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        question: "Document that proves that a borrower has an established valid trust, in lieu of actually providing the whole entire trust (which at times could exceed 100 pages). If the property is held in a trust in any matter, a --------- has to be filled out.",
+        optionA: "Allotment Fund",
+        optionB: "Trust Allotment",
         optionC: "Trust Certification",
         optionD: "zzzzzzzzz",
         correctOption: "optionC"
     },
     {
-        question: "Stands for Preliminary Change of Ownership Report. This helps the county understand what is going on with the grant deed or quitclaim deed. For example, if there is a transfer between spouses because of a removal from a trust, a PCOR would be filled out to help define that. A PCOR only gets filled out if there is a grant deed or quitclaim deed.",
+        question: "<b>True or False: </b> P.C.O.R. Stands for Preamble Change of Occupancy Report.",
         optionA: "zzzzzzzzz",
         optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "P.C.O.R.",
+        optionC: "True",
+        optionD: "False",
         correctOption: "optionD"
     },
     {
         question: "Document stating that the loans in the subordinate position stay in the same lien position even though the lien above them has been paid off. This allows is a new lien holder to go into the empty 1st position. As an example, if someone refinances a first but there is also a second on the property, the new lender will only approve the loan if their loan will goes in the first lien position.",
         optionA: "Subordination Agreement",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionB: "Payoff Demand/Payoff Statement",
+        optionC: "Insurance Information Agreement",
+        optionD: "Escrow Insurance",
         correctOption: "optionA"
     },
     {
-        question: "When a lien is recorded, its position of importance is noted on the title. If a lien is recorded in the first position, it is the first to be paid off. Most mortgages are first liens. If something happens to the property, the lien recorded in the first position gets paid first. There can be a number of lien positions (1st, 2nd, 3rd, etc.). As liens are paid off, the lien that was in the next position moves into the lien position that had been vacated.",
-        optionA: "zzzzzzzzz",
-        optionB: "Lien Position",
+        question: "<b>True or False: </b>When a lien is recorded, its position of importance is noted on the title. If a lien is recorded in the first position, it is the first to be paid off. Most mortgages are first liens. If something happens to the property, the lien recorded in the first position gets paid first. There can be a number of lien positions (1st, 2nd, 3rd, etc.). As liens are paid off, the lien that was in the next position moves into the lien position that had been vacated.",
+        optionA: "False",
+        optionB: "True",
         optionC: "zzzzzzzzz",
         optionD: "zzzzzzzzz",
         correctOption: "optionB"
     },
     {
-        question: "The borrower's homeowners' insurance. Covers anything that may happen to the residence like a fire, flood or anything can happen to the structure of the house. Banks won't lend against a residence that is not insured.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        question: "Covers anything that may happen to the residence like a fire, flood or anything can happen to the structure of the house. Banks won't lend against a residence that is not insured.",
+        optionA: "Accidental Insurance",
+        optionB: "Fire Insurance",
         optionC: "Hazard Insurance",
-        optionD: "zzzzzzzzz",
+        optionD: "Car Insurance",
         correctOption: "optionC"
     },
     {
-        question: "Also known as an Attorney in Fact; when someone gives another person authority to sign on their behalf. For instance, a spouse who is in the military and is deployed might give their spouse power of attorney to sign loan docs on their behalf.",
+        question: "<b>True or False: </b>When someone gives another person authority to sign on their behalf. For instance, a spouse who is in the military and is deployed might give their spouse <b>Power of Attorney</b> to sign loan docs on their behalf.",
         optionA: "zzzzzzzzz",
         optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "Power of Attorney",
+        optionC: "False",
+        optionD: "True",
         correctOption: "optionD"
     },
     {
         question: "The contract between the buyer and seller on the terms of the sale.",
         optionA: "Purchase Contract",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionB: "Open Contract",
+        optionC: "Property Contract",
+        optionD: "Acquisition Contract",
         correctOption: "optionA"
     },
     {
-        question: "Proof of a monetary deposit required to open escrow. It shows the seller that the buyer is serious about buying the rproperty.",
-        optionA: "zzzzzzzzz",
-        optionB: "Receipt/Proof of Deposit",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
-        correctOption: "optionB"
-    },
-    {
         question: "This tells the lender whether the property being bought or refinanced is a primary residence, second home or investment property.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        optionA: "Ownership Oath",
+        optionB: "Occupancy Affirmation",
         optionC: "Occupancy Affidavit",
         optionD: "zzzzzzzzz",
         correctOption: "optionC"
     },
     {
-        question: "The payoff in a purchase transaction is the same as payoff for a refinance. It shows how much is owed on a current mortgage; however, the reason why it is ordered is slightly different. In a purchase, the payoff is ordered to show what the seller owes on the house that they are selling. The buyer never sees the payoff; it is acknowledged by the seller, approving that they want escrow to pay off the balance owed on the property.",
+        question: "<b>True or False: </b>The Wildlife Report, A report that tells the homeowner and the lender if there are any termites found on the property. If there is, usually a termite clearance is needed to show that the problem areas have been addressed.",
         optionA: "zzzzzzzzz",
         optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "Payoff (Purchase)",
-        correctOption: "optionD"
-    },
-    {
-        question: "A report that tells the homeowner and the lender if there are any termites found on the property. If there is, usually a termite clearance is needed to show that the problem areas have been addressed.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "Termite report",
-        optionD: "zzzzzzzzz",
+        optionC: "False",
+        optionD: "True",
         correctOption: "optionC"
     },
     {
-        question: "instructions to the escrow and title companies from the lender on exactly how the lender wants their loan closed. The borrower and the escrow officer usually sign the instructions acknowledging them.",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "Lender's Instructions/Closing Instructions",
-        correctOption: "optionD"
-    },
-    {
-        question: "Usually referred to as the -ten-oh-three.- A loan application within the mortgage industry.",
-        optionA: "1003 Loan Application",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
-        correctOption: "optionA"
-    },
-    {
-        question: "In a refinance transaction on a primary residence, the borrower gets three business days (not including Sundays and some holidays) from the day they sign loan documents to cancel the loan if they want. This is a law and cannot be waived.",
-        optionA: "zzzzzzzzz",
-        optionB: "Notice of Right to Cancel",
+        question: "<b>True or False: </b>In a refinance transaction on a primary residence, the borrower gets three business days (not including Sundays and some holidays) from the day they sign loan documents to cancel the loan if they want. This is a law and cannot be waived. This law is known as -Notice of Right to Cancel-",
+        optionA: "False",
+        optionB: "True",
         optionC: "zzzzzzzzz",
         optionD: "zzzzzzzzz",
         correctOption: "optionB"
     },
     {
-        question: "zzzzzzzzz",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        question: "Document that replaces what used to be called the truth in lending form. Informs the borrower about everything pertinent about the loan; all costs associated with the transaction, just like the <B><strike>REDACTED</strike></B> statement. The lender must <B><strike>REDACTED</strike></B> everything about the loan so the borrower has a concise look at what they are getting in to. This form is a little redundant as it has information found on different forms throughout the loan documents.",
+        optionA: "Closing Disclosure",
+        optionB: "Open Concealment",
+        optionC: "Grant ​Deed/Quitclaim Deed",
+        optionD: "Payoff Statement",
         correctOption: "optionA"
     },
     {
-        question: "zzzzzzzzz",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+        question: "<b>True or False: </b>Washington State Domiciliary Partnership Addendum to Uniform Residential Loan Application is a Document informing the lender that the borrower does or does not have a domestic partner.",
+        optionA: "True",
+        optionB: "False",
         optionC: "zzzzzzzzz",
         optionD: "zzzzzzzzz",
         correctOption: "optionB"
     },
     {
-        question: "zzzzzzzzz",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        question: "This form gives permission to the lender to confirm employment, and have the borrower's assets, credit report and financial records in their possession.",
+        optionA: "Grant ​Deed/Quitclaim Deed",
+        optionB: "Riders Authentication Certificate",
+        optionC: "Borrower Certification and Authorization",
+        optionD: "Credit Report",
         correctOption: "optionC"
     },
     {
-        question: "zzzzzzzzz",
+        question: "Properties with mortgages must have <B><strike>REDACTED</strike></B> insurance. This form also allows the lender to be the loss payee.",
         optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
-        optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionB: "Force-placed Insurance and Consumer Qualifications",
+        optionC: "Homeowners Insurance and Requirements",
+        optionD: "Hazard Insurance Authorization and Requirements",
         correctOption: "optionD"
     },
     {
+        question: "Required document in order for the borrower to deduct interest paid on their mortgage loan.",
+        optionA: "W-9",
+        optionB: "W-10",
+        optionC: "W-8",
+        optionD: "W-4506",
+        correctOption: "optionA"
+    },
+    {
+        question: "This document informs the borrower that if anything else needs to be signed before the loan funds, the borrower will comply with any requests.",
+        optionA: "Consumer Credit Score Disclosure",
+        optionB: "Statement of Information (S.I.)",
+        optionC: "Compliance Agreement",
+        optionD: "Deed of Trust",
+        correctOption: "optionC"
+    },
+    {
+        question: "Document that gives the borrower their credit score, and discloses that the borrower has the right to know their credit score.",
+        optionA: "Compliance Agreement",
+        optionB: "Statement of Information (S.I.)",
+        optionC: "Borrower Certification and Authorization",
+        optionD: "Consumer Credit Score Disclosure",
+        correctOption: "optionD"
+    },
+    {
+        question: "<b>True or False: </b> The Housing Financial Discrimination Act of 2017 Fair Lending Notice is a document that says the borrower was not discriminated against.",
+        optionA: "False",
+        optionB: "True",
+        optionC: "zzzzzzzzz",
+        optionD: "zzzzzzzzz",
+        correctOption: "optionA"
+    },
+	{
         question: "zzzzzzzzz",
         optionA: "zzzzzzzzz",
         optionB: "zzzzzzzzz",
         optionC: "zzzzzzzzz",
-        optionD: "zzzzzzzzz",
+        optionD: "zzz",
         correctOption: "optionD"
     }
-	
-	*/
+
 ]
 
 
@@ -474,6 +467,11 @@ let wrongQuestions = [] // empty array that wrong questions will be added to. Th
 
 // function for displaying next question in the array to dom
 function NextQuestion(index) {
+	document.getElementById("option-one-label").style.display='block';
+	document.getElementById("option-two-label").style.display='block';
+	document.getElementById("option-three-label").style.display='block';
+	document.getElementById("option-four-label").style.display='block';
+	
 	
 	document.getElementById('score-modal').style.display = "none"
 	
@@ -487,6 +485,15 @@ function NextQuestion(index) {
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
 
+
+	if (document.getElementById("option-one-label").innerHTML === "zzzzzzzzz")
+		document.getElementById("option-one-label").style.display='none';
+	if (document.getElementById("option-two-label").innerHTML === "zzzzzzzzz")
+		document.getElementById("option-two-label").style.display='none';
+	if (document.getElementById("option-three-label").innerHTML === "zzzzzzzzz")
+		document.getElementById("option-three-label").style.display='none';
+	if (document.getElementById("option-four-label").innerHTML === "zzzzzzzzz")
+		document.getElementById("option-four-label").style.display='none';
 }
 
 
@@ -552,6 +559,9 @@ function checkForAnswer() {
 
 //called when the next button is called
 function handleNextQuestion() {
+	
+	
+	
     checkForAnswer()
     unCheckRadioButtons()
     //delays next question displaying for a second
@@ -563,7 +573,10 @@ function handleNextQuestion() {
             handleEndGame()
         }
         resetOptionBackground()
+		
     }, 1000);
+	
+	
 }
 
 
@@ -622,15 +635,15 @@ function handleEndGame() {
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "<B>Bad Grades, Keep Practicing.</B>"
+        remark = "<B>Bad, Keep Practicing.</B>"
         remarkColor = "#e98080"
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "<B>Average Grades, You can do better.</B>"
+        remark = "<B>Average babe, You can do better.</B>"
         remarkColor = "#f2b681"
     }
     else if (playerScore >= 7) {
-        remark = "<B>Excellent, Keep the good work going.</B>"
+        remark = "<B>Excellent work babe!!</B>"
         remarkColor = "#81f281"
     }
     const playerGrade = (playerScore / 10) * 100
