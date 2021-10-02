@@ -184,7 +184,7 @@ const questions = [
         correctOption: "optionA"
     },
     {
-        question: "<b>True or False: </b>PITI stands for -Abbreviation for Principal, Interest, Taxes and Insurance- the components of a monthly mortgage payment.",
+        question: "<b>True or False: </b>PITI stands for -- Principal, Interest, Taxes and Insurance -- the components of a monthly mortgage payment.",
         optionA: "False",
         optionB: "True",
         optionC: "zzzzzzzzz",
@@ -431,15 +431,62 @@ const questions = [
         optionD: "zzzzzzzzz",
         correctOption: "optionA"
     },
-	{
-        question: "zzzzzzzzz",
-        optionA: "zzzzzzzzz",
-        optionB: "zzzzzzzzz",
+    {
+        question: "The max amount of insurance coverage the lender can require to borrower to have is replacement cost of the house. Not the appraised value.",
+        optionA: "California per Diem Insurance Disclosure",
+        optionB: "Hazard Insurance Disclosure",
+        optionC: "Accidental Insurance Concealment",
+        optionD: "California Insurance Disclosure/Waiver",
+        correctOption: "optionB"
+    },
+    {
+        question: "This document states whether the borrower has to have an impound/escrow account or if they request to have one, or decline to have one.",
+        optionA: "Hazard Insurance Disclosure",
+        optionB: "California per Diem Interest Disclosure",
+        optionC: "California Impound Disclosure/Waiver",
+        optionD: "Hazard Insurance Disclosure",
+        correctOption: "optionC"
+    },
+    {
+        question: "The borrower confirms all contact information the lender has for them is correct; mailing address, phone numbers, etc.",
+        optionA: "Contact Verification Form",
+        optionB: "Association Confirmation Form",
+        optionC: "Credit Report",
+        optionD: "Tenant/Mortgagee History Report",
+        correctOption: "optionA"
+    },
+    {
+        question: "<b>True or False: </b>Counseling Checklist for Military Home Buyers is a VA document informing the veteran that if they miss any payments, home counseling may be required. Essentially the counseling is letting them know how bad foreclosure is and they should not miss more payments.",
+        optionA: "False",
+        optionB: "True",
         optionC: "zzzzzzzzz",
-        optionD: "zzz",
+        optionD: "zzzzzzzzz",
+        correctOption: "optionB"
+    },
+    {
+        question: "This document is where the notary signing agent records for the lender the ID information used to identify the borrower.",
+        optionA: "USA Freedom Act ",
+        optionB: "USA Treasury Act",
+        optionC: "USA Patriot Act",
+        optionD: "USA Partisan Act",
+        correctOption: "optionC"
+    },
+    {
+        question: "This document lets the borrower know that their credit score was a determining factor on their approval. Also, that the lender can discriminate based on credit score. Bad credit equals a higher interest rate.",
+        optionA: "Credit Report",
+        optionB: "USA Patriot Act",
+        optionC: "California per Diem Credit Notice",
+        optionD: "Federal Equal Credit Opportunity Act Notice",
         correctOption: "optionD"
+    },
+    {
+        question: "Flood zones are constantly being updated all over the country. The lender is letting the borrower know that if the property is ever rezoned as a flood zone they will be required to have flood insurance.",
+        optionA: "Flood Insurance Coverage Subject to Change Disclosure",
+        optionB: "Hazard Insurance Coverage Subject to Change Disclosure",
+        optionC: "Safety Insurance Coverage Subject to Change Disclosure",
+        optionD: "Car Insurance",
+        correctOption: "optionA"
     }
-
 ]
 
 
