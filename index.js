@@ -417,7 +417,7 @@ const questions = [
     },
     {
         question: "Document that gives the borrower their credit score, and discloses that the borrower has the right to know their credit score.",
-        optionA: "Compliance Agreement",
+        optionA: "Credit Report",
         optionB: "Statement of Information (S.I.)",
         optionC: "Borrower Certification and Authorization",
         optionD: "Consumer Credit Score Disclosure",
@@ -480,13 +480,222 @@ const questions = [
         correctOption: "optionD"
     },
     {
-        question: "Flood zones are constantly being updated all over the country. The lender is letting the borrower know that if the property is ever rezoned as a flood zone they will be required to have flood insurance.",
+        question: "<B><strike>REDACTED</strike></B> zones are constantly being updated all over the country. The lender is letting the borrower know that if the property is ever rezoned as a flood zone they will be required to have -----------.",
         optionA: "Flood Insurance Coverage Subject to Change Disclosure",
         optionB: "Hazard Insurance Coverage Subject to Change Disclosure",
         optionC: "Safety Insurance Coverage Subject to Change Disclosure",
         optionD: "Car Insurance",
         correctOption: "optionA"
+    },
+    {
+        question: "<b>True or False: </b>The Initial Escrow Account Disclosure Statement shows how the impound account will look over the next 12 months. It shows the balance every month for the next 12 months, when the lender will make the tax and insurance payments, and how much will be paid.",
+        optionA: "False",
+        optionB: "True",
+        optionC: "zzzzzzzzz",
+        optionD: "zzzzzzzzz",
+        correctOption: "optionB"
+    },
+    {
+        question: "Not all borrowers want the mortgage statement (the bill) sent to the property address. This form lets the lender know exactly where the borrower prefers the mortgage statement to be sent.",
+        optionA: "GPS Address Tracker",
+        optionB: "USPS Change of Address Form",
+        optionC: "Mailing Address Certification",
+        optionD: "Postal Box Address Certification",
+        correctOption: "optionC"
+    },
+    {
+        question: "A common provision of a mortgage or note providing the holder with the right to demand that the entire balance is immediately due and usually payable in the event of default.",
+        optionA: "Precipitation Clause",
+        optionB: "Leisure Clause",
+        optionC: "Santa Clause",
+        optionD: "Acceleration Clause",
+        correctOption: "optionD"
+    },
+    {
+        question: "The length of time between changes in the interest rate or monthly payment on an ARM loan.",
+        optionA: "Adjustment Interval",
+        optionB: "Fixed Interval",
+        optionC: "Readjustment Gap",
+        optionD: "zzzzzzzzz",
+        correctOption: "optionA"
+    },
+    {
+        question: "Contract signed by buyer and seller stating the terms and conditions under which a property will be sold.",
+        optionA: "Mortgage Contract",
+        optionB: "Agreement of Sale",
+        optionC: "The Covenant",
+        optionD: "Buyers Acknowledgement",
+        correctOption: "optionB"
+    },
+    {
+        question: "A method of documenting a loan file that relies on information that the borrower is likely to be able to provide instead of waiting on verification sent to third parties for confirmation of statements made in the application.",
+        optionA: "Solitary Agreement",
+        optionB: "Traditional Application",
+        optionC: "Alternative Documentation",
+        optionD: "Conventional Documentation",
+        correctOption: "optionC"
+    },
+    {
+        question: "This figure is used to calculate the borrower's APR. It represents the loan amount minus any prepaid finance charges and assumes the borrower will keep the loan to maturity and make only the required monthly payments.",
+        optionA: "Amount Borrowed",
+        optionB: "Payout Amount",
+        optionC: "Amount of equity",
+        optionD: "Amount Financed",
+        correctOption: "optionD"
+    },
+    {
+        question: "Fee charged by a lender to cover the initial costs of processing a loan application. The fee may include the cost of obtaining a property appraisal, a credit report, and a lock-in fee or other closing costs incurred during the process, or the fee may be in addition to these charges.",
+        optionA: "Application Fee",
+        optionB: "Assignment Recording Fee",
+        optionC: "Appraisal Fee",
+        optionD: "Insurance Fee",
+        correctOption: "optionA"
+    },
+    {
+        question: "A written analysis of the estimated value of a property. A qualified appraiser who has knowledge, experience and insight into the marketplace prepares the document. It demonstrates approximate fair market value based on recent sales in the neighborhood and is required to purchase or refinance a new home or property.",
+        optionA: "Assessment",
+        optionB: "Appraisal",
+        optionC: "Estimate",
+        optionD: "Summing-up",
+        correctOption: "optionB"
+    },
+    {
+        question: "A fee charged by a licensed, certified appraiser to render an opinion of market value as of a specific date. This fee is paid to the outside appraisal company to objectively determine the fair market value of a property. This fee varies based on the location and type of property.",
+        optionA: "Assignment Recording Fee",
+        optionB: "Insurance Fee",
+        optionC: "Appraisal Fee",
+        optionD: "Documentation Fee",
+        correctOption: "optionC"
+    },
+    {
+        question: "The valuation placed upon a property by a public tax assessor for the purposes of taxation.",
+        optionA: "Established Value",
+        optionB: "Evaluated Value",
+        optionC: "Estimated Value",
+        optionD: "Assessed Value",
+        correctOption: "optionD"
+    },
+    {
+        question: "<b>True or False: </b>Deassign is known as the transfer of ownership, rights, or interests in property by one person, the assignor, to another, the assignee.",
+        optionA: "False",
+        optionB: "True",
+        optionC: "zzzzzzzzz",
+        optionD: "zzzzzzzzz",
+        correctOption: "optionA"
+    },
+    {
+        question: "In many instances, after closing, the lender transfers a loan to a specialized loan 'servicer' who handles the collection of monthly payments. The <B><strike>REDACTED</strike></B> Fee covers the cost of <B><strike>REDACTED</strike></B> this transfer at the local <B><strike>REDACTED</strike></B> office.",
+        optionA: "Application Fee",
+        optionB: "Assignment Recording Fee",
+        optionC: "Appraisal Fee",
+        optionD: "Documentation Fee",
+        correctOption: "optionB"
+    },
+    {
+        question: "A method of selling real estate where the buyer of the property agrees to become responsible for the repayment of an existing loan on the property. VA loans usually allow another party to assume the loan.",
+        optionA: "Supposition",
+        optionB: "Distrust",
+        optionC: "Assumption",
+        optionD: "Palpability",
+        correctOption: "optionC"
+    },
+    {
+        question: "<b>True or False: </b>A Blimp Mortgage is defined as... Short-term, fixed-rate loans, with fixed monthly payments for a set number of years followed by one large final balloon payment for the entire remainder of the principal. The balloon payment may be due at the end of five, seven, or ten years. Borrowers with balloon loans may have the right to refinance the loan when the balloon payment is due, but the right to refinance is not guaranteed.",
+        optionA: "zzzzzzzzz",
+        optionB: "zzzzzzzzz",
+        optionC: "True",
+        optionD: "False",
+        correctOption: "optionD"
+    },
+    {
+        question: "A proceeding in a federal court to relieve certain debts of a person or a business unable to pay its debts.",
+        optionA: "Bankruptcy",
+        optionB: "Solvency",
+        optionC: "Insolvency",
+        optionD: "Indebtedness",
+        correctOption: "optionA"
+    },
+    {
+        question: "A person named to receive a <B><strike>REDACTED</strike></B> from a trust. A contingent <B><strike>REDACTED</strike></B> has conditions attached to his rights, usually someone else must die first.",
+        optionA: "Recipient",
+        optionB: "Beneficiary",
+        optionC: "Heir",
+        optionD: "Inheritor",
+        correctOption: "optionB"
+    },
+    {
+        question: "A gift of personal property by will.",
+        optionA: "Inheritance",
+        optionB: "Legacy",
+        optionC: "Bequest",
+        optionD: "Endowment",
+        correctOption: "optionC"
+    },
+    {
+        question: "An individual who brings buyers and sellers together and assists in negotiating contracts for a client.",
+        optionA: "Intermediary",
+        optionB: "Seller",
+        optionC: "Mortgagor",
+        optionD: "Broker",
+        correctOption: "optionD"
+    },
+    {
+        question: "A mortgage that covers more than one parcel of real estate.",
+        optionA: "Blanket Mortgage",
+        optionB: "Forward Mortgage",
+        optionC: "Reverse Mortgage",
+        optionD: "Fixed-rate Mortgage",
+        correctOption: "optionA"
+    },
+    {
+        question: "The fee charged to the borrower to have their file packaged and handed over to a selected lender. --There is no broker involved in Quicken Loans transactions; the borrower deals with Quicken Loans from start to finish.--",
+        optionA: "Assignment Recording Fee",
+        optionB: "Broker Processing Fee",
+        optionC: "Appraisal Fee",
+        optionD: "Application Fee",
+        correctOption: "optionB"
+    },
+    {
+        question: "<b>True or False: </b>Cash-Out is defined as..... When the lender and/or the home builder subsidizes the mortgage by lowering the interest rate during the first few years of the loan. While the payments are initially low, they will increase when the subsidy expires.",
+        optionA: "zzzzzzzzz",
+        optionB: "zzzzzzzzz",
+        optionC: "False",
+        optionD: "True",
+        correctOption: "optionC"
+    },
+    {
+        question: "<b>True or False: </b>Buyer's Market is defined as... Market conditions that favor buyers. With more sellers than buyers in the market, sellers may be forced to make substantial price concessions.",
+        optionA: "zzzzzzzzz",
+        optionB: "zzzzzzzzz",
+        optionC: "False",
+        optionD: "True",
+        correctOption: "optionD"
+    },
+    {
+        question: "Safeguards that limit the amount the interest rate on an adjustable rate mortgage can change in an adjustment interval and/or over the life of the loan. For example, if a per-period cap is 1% and the current rate is 7%, then the newly adjusted rate must fall between 6% and 8% regardless of actual changes in the index.",
+        optionA: "Cashier's Check (or Bank Check)",
+        optionB: "Caps (reserve)",
+        optionC: "Caps (payment)",
+        optionD: "Caps (interest)",
+        correctOption: "optionD"
+    },
+	{
+        question: "Consumer safeguards that limit the amount monthly payments on an adjustable rate mortgage may change. Since they do not limit the amount of interest the lender is earning, these consumer safeguards may cause negative amortization.",
+        optionA: "Caps (reserve)",
+        optionB: "Caps (interest)",
+        optionC: "Cash Out",
+        optionD: "Caps (payment)",
+        correctOption: "optionD"
+    },
+	{
+        question: "<b>True or False: </b>Cash out is defined as...... Any cash received when the borrower gets a new loan that is above the remaining balance of the current mortgage, based upon the equity built up in the property. The cash out amount is calculated by subtracting the sum of the old loan and fees from the new mortgage loan. For example, if the existing loan is $100,000, the borrower might refinance it with a loan of $120,000. After the current loan is paid off ($100,000) and any loan-origination costs for the new loan are paid (for example $2,000 in points), the borrower would be left with $18,000 cash out. Cash-out loans may not be available for all types of property.",
+        optionA: "zzzzzzzzz",
+        optionB: "zzzzzzzzz",
+        optionC: "False",
+        optionD: "True",
+        correctOption: "optionD"
     }
+
 ]
 
 
